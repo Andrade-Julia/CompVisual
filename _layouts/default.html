@@ -26,7 +26,7 @@
         .header-banner {
             width: 100%;
             height: 200px;
-            background-image: url('../images/GatinhoCompVisual.png');
+            background-image: url('images/GatinhoCompVisual.png'); /* Caminho corrigido! */
             background-size: cover;
             background-position: center;
             margin-bottom: 20px;
@@ -60,7 +60,7 @@
             min-height: 500px; 
         }
 
-        /* Coluna da Direita (Atividades) - Ajustado para 250px para caber o texto ao lado do botão */
+        /* Coluna da Direita (Atividades) */
         .sidebar-right {
             width: 250px;
             flex-shrink: 0;
@@ -94,65 +94,36 @@
             margin: 0;
         }
 
-        .retro-list li {
-            margin-bottom: 10px;
-        }
-
-        .retro-list a {
-            color: #cc00cc; 
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .retro-list a:hover {
-            text-decoration: underline;
-            color: #ff1493; 
-        }
-
-        .retro-list span {
-            color: #ff007f;
-            font-weight: normal;
-        }
+        .retro-list li { margin-bottom: 10px; }
+        
+        .retro-list a { color: #cc00cc; text-decoration: none; font-weight: bold; }
+        
+        .retro-list a:hover { text-decoration: underline; color: #ff1493; }
+        
+        .retro-list span { color: #ff007f; font-weight: normal; }
 
         /* --- ESTILO DA COLUNA DA DIREITA (Botões Gordinhos + Texto) --- */
         .activities-list {
-            list-style: none;
-            padding: 15px 10px;
-            margin: 0;
+            list-style: none; padding: 15px 10px; margin: 0;
         }
 
         .activities-list li {
-            margin-bottom: 15px;
-            display: flex; /* Coloca o botão e o texto lado a lado */
-            align-items: center; /* Centraliza a altura do botão com o texto */
-            gap: 10px; /* Dá um espacinho entre o botão e o texto */
+            margin-bottom: 15px; display: flex; align-items: center; gap: 10px;
             font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
-            color: #cc00cc; /* Cor roxa para o texto ao lado do botão */
-            font-size: 14px;
-            font-weight: bold;
+            color: #cc00cc; font-size: 14px; font-weight: bold;
         }
 
         /* O Botão Brilhante (Glossy) */
         .activities-list a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            background-color: #ffb3d9;
-            color: #66cc33;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-            border-radius: 8px;
-            border: 2px solid #ff99cc;
+            display: inline-block; width: 40px; height: 40px; line-height: 40px;
+            background-color: #ffb3d9; color: #66cc33; text-decoration: none;
+            font-size: 20px; font-weight: bold; text-align: center;
+            border-radius: 8px; border: 2px solid #ff99cc;
             box-shadow: inset 0 5px 10px rgba(255,255,255,0.8), 2px 2px 5px rgba(0,0,0,0.2);
-            flex-shrink: 0; /* Impede que o botão encolha e fique torto */
+            flex-shrink: 0; 
         }
 
-        .activities-list a:hover {
-            background-color: #ff99cc;
-        }
+        .activities-list a:hover { background-color: #ff99cc; }
 
     </style>
 </head>
@@ -167,7 +138,7 @@
         
         <!-- Coluna Esquerda: Sobre Mim -->
         <div class="sidebar-left">
-            <img src="../images/avatar-pink.jpg" alt="Avatar Rosa" class="profile-pic">
+            <img src="images/avatar-pink.jpg" alt="Avatar Rosa" class="profile-pic"> <!-- Caminho corrigido! -->
             <div class="title-bar">Sobre mim:</div>
             <div class="profile-info">
                 Nome: Júlia Andrade<br>
@@ -175,15 +146,12 @@
             </div>
         </div>
 
-        <!-- Coluna Central: Posts -->
+        <!-- Coluna Central: Anotações -->
         <div class="main-content">
-            
-            <div class="main-content">
-                <div class="title-bar">Anotações</div>
-                <!-- O padding abaixo evita que o texto grude na borda -->
-                <div style="padding: 15px; line-height: 1.6;">
-                    {{ content }}
-                </div>
+            <div class="title-bar">Anotações</div>
+            <!-- Div duplicada removida! -->
+            <div style="padding: 15px; line-height: 1.6;">
+                {{ content }}
             </div>
         </div>
 
@@ -191,7 +159,6 @@
         <div class="sidebar-right">
             <div class="title-bar">Atividades</div>
             
-            <!-- Usando a classe activities-list para os botões fofos + texto -->
             <ul class="activities-list">
                 <li><a href="#">1</a> Computação Visual?</li>
                 <li><a href="#">2</a> Computação Gráfica, Compugrafia ou Compugráfica?</li>
