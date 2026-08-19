@@ -26,7 +26,7 @@
         .header-banner {
             width: 100%;
             height: 200px;
-            background-image: url('images/GatinhoCompVisual.png');
+            background-image: url('../images/GatinhoCompVisual.png');
             background-size: cover;
             background-position: center;
             margin-bottom: 20px;
@@ -167,7 +167,7 @@
         
         <!-- Coluna Esquerda: Sobre Mim -->
         <div class="sidebar-left">
-            <img src="images/avatar-pink.jpg" alt="Avatar Rosa" class="profile-pic">
+            <img src="../images/avatar-pink.jpg" alt="Avatar Rosa" class="profile-pic">
             <div class="title-bar">Sobre mim:</div>
             <div class="profile-info">
                 Nome: Júlia Andrade<br>
@@ -177,13 +177,14 @@
 
         <!-- Coluna Central: Posts -->
         <div class="main-content">
-            <div class="title-bar">Posts</div>
             
-            <!-- Usando a classe retro-list para os quadradinhos -->
-            <ul class="retro-list">
-                <li><a href="#">1. Computação Visual?</a> <span>(12/08/2026)</span></li>
-                <li><a href="#">2. Computação Gráfica, Compugrafia ou Compugráfica?</a> <span>(Em breve)</span></li>
-            </ul>
+            <div class="main-content">
+                <div class="title-bar">Anotações</div>
+                <!-- O padding abaixo evita que o texto grude na borda -->
+                <div style="padding: 15px; line-height: 1.6;">
+                    {{ content }}
+                </div>
+            </div>
         </div>
 
         <!-- Coluna Direita: Atividades -->
