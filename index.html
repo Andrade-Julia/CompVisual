@@ -60,9 +60,9 @@
             min-height: 500px; 
         }
 
-        /* Coluna da Direita (Atividades) */
+        /* Coluna da Direita (Atividades) - Ajustado para 250px para caber o texto ao lado do botão */
         .sidebar-right {
-            width: 150px;
+            width: 250px;
             flex-shrink: 0;
         }
 
@@ -84,11 +84,11 @@
             line-height: 1.5;
         }
 
-        /* --- O SEU ESTILO DE LISTA RETRÔ (Baseado na imagem d45fc2.png) --- */
+        /* --- ESTILO DA COLUNA DO MEIO (Lista Retrô com Quadrados) --- */
         .retro-list {
-            padding: 15px 15px 15px 30px; /* Dá espaço para os quadrados aparecerem */
-            list-style-type: square; /* Marcadores quadrados */
-            color: #ff007f; /* Cor do quadrado (rosa) */
+            padding: 15px 15px 15px 30px; 
+            list-style-type: square; 
+            color: #ff007f; 
             font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
             font-size: 16px;
             margin: 0;
@@ -98,7 +98,6 @@
             margin-bottom: 10px;
         }
 
-        /* Estilo dos links (Roxo brilhante) */
         .retro-list a {
             color: #cc00cc; 
             text-decoration: none;
@@ -107,13 +106,52 @@
 
         .retro-list a:hover {
             text-decoration: underline;
-            color: #ff1493; /* Muda para rosa ao passar o mouse */
+            color: #ff1493; 
         }
 
-        /* Estilo do texto das datas (Rosa) */
         .retro-list span {
             color: #ff007f;
             font-weight: normal;
+        }
+
+        /* --- ESTILO DA COLUNA DA DIREITA (Botões Gordinhos + Texto) --- */
+        .activities-list {
+            list-style: none;
+            padding: 15px 10px;
+            margin: 0;
+        }
+
+        .activities-list li {
+            margin-bottom: 15px;
+            display: flex; /* Coloca o botão e o texto lado a lado */
+            align-items: center; /* Centraliza a altura do botão com o texto */
+            gap: 10px; /* Dá um espacinho entre o botão e o texto */
+            font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+            color: #cc00cc; /* Cor roxa para o texto ao lado do botão */
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* O Botão Brilhante (Glossy) */
+        .activities-list a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #ffb3d9;
+            color: #66cc33;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            border: 2px solid #ff99cc;
+            box-shadow: inset 0 5px 10px rgba(255,255,255,0.8), 2px 2px 5px rgba(0,0,0,0.2);
+            flex-shrink: 0; /* Impede que o botão encolha e fique torto */
+        }
+
+        .activities-list a:hover {
+            background-color: #ff99cc;
         }
 
     </style>
@@ -141,7 +179,7 @@
         <div class="main-content">
             <div class="title-bar">Posts</div>
             
-            <!-- Usando a classe retro-list -->
+            <!-- Usando a classe retro-list para os quadradinhos -->
             <ul class="retro-list">
                 <li><a href="#">1. Computação Visual?</a> <span>(12/08/2026)</span></li>
                 <li><a href="#">2. Computação Gráfica, Compugrafia ou Compugráfica?</a> <span>(Em breve)</span></li>
@@ -152,11 +190,11 @@
         <div class="sidebar-right">
             <div class="title-bar">Atividades</div>
             
-            <!-- Usando a MESMA classe retro-list para manter o padrão -->
-            <ul class="retro-list">
-                <li><a href="#">Atividade 1</a></li>
-                <li><a href="#">Atividade 2</a></li>
-                <li><a href="#">Atividade 3</a></li>
+            <!-- Usando a classe activities-list para os botões fofos + texto -->
+            <ul class="activities-list">
+                <li><a href="#">1</a> Computação Visual?</li>
+                <li><a href="#">2</a> Computação Gráfica, Compugrafia ou Compugráfica?</li>
+                <li><a href="#">3</a> Atividade 3</li>
             </ul>
         </div>
 
