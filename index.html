@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computação Visual</title>
     <style>
-        /* Fundo principal - Mantendo a sua escolha pelas bolinhas */
+        /* Fundo principal com as bolinhas rosa */
         body {
             background-color: #ffe6f2;
             background-image: radial-gradient(#ffb3d9 15%, transparent 16%);
             background-size: 20px 20px;
-            font-family: Arial, sans-serif; /* Fontes sem serifa eram muito comuns em partes estruturais */
+            font-family: Arial, sans-serif; 
             margin: 0;
             padding: 20px;
             color: #333;
         }
 
-        /* Container que segura tudo para não espalhar muito em telas grandes */
+        /* Container que segura tudo */
         .wrapper {
             max-width: 900px;
             margin: 0 auto;
@@ -25,27 +25,26 @@
         /* O Banner do Gatinho no topo */
         .header-banner {
             width: 100%;
-            height: 200px; /* Ajuste a altura conforme a proporção real da sua imagem */
+            height: 200px;
             background-image: url('images/GatinhoCompVisual.png');
             background-size: cover;
             background-position: center;
             margin-bottom: 20px;
-            /* Se a imagem não for larga o suficiente, você pode adicionar uma cor de fundo para preencher */
             background-color: #ffccdd; 
         }
 
         /* Estrutura de três colunas usando Flexbox */
         .layout {
             display: flex;
-            gap: 20px; /* Espaço entre as colunas */
-            align-items: flex-start; /* Alinha o topo das colunas */
+            gap: 20px;
+            align-items: flex-start;
         }
 
         /* Coluna da Esquerda (Perfil) */
         .sidebar-left {
             width: 200px;
             flex-shrink: 0;
-            background-color: rgba(255, 255, 255, 0.5); /* Fundo levemente transparente */
+            background-color: rgba(255, 255, 255, 0.5); 
         }
 
         .profile-pic {
@@ -56,9 +55,9 @@
 
         /* Coluna do Meio (Conteúdo Principal) */
         .main-content {
-            flex-grow: 1; /* Ocupa o espaço que sobrar */
-            background-color: #ffccdd; /* Fundo rosa sólido para a área de posts */
-            min-height: 500px; /* Só para garantir que não fique muito curto se estiver vazio */
+            flex-grow: 1;
+            background-color: #ffccdd; 
+            min-height: 500px; 
         }
 
         /* Coluna da Direita (Atividades) */
@@ -69,13 +68,13 @@
 
         /* Estilo comum para as barras verdes de título */
         .title-bar {
-            background-color: #66cc33; /* O tom de verde da imagem */
+            background-color: #66cc33; 
             color: white;
             text-align: center;
             padding: 8px 0;
             font-weight: bold;
             font-size: 14px;
-            margin: 0; /* Remove margem padrão para grudar nas imagens/caixas */
+            margin: 0;
         }
 
         /* Texto abaixo da foto de perfil */
@@ -85,59 +84,36 @@
             line-height: 1.5;
         }
 
-        /* Lista de Atividades (na coluna da direita) */
-        .activities-list {
-            list-style: none;
-            padding: 10px 0;
+        /* --- O SEU ESTILO DE LISTA RETRÔ (Baseado na imagem d45fc2.png) --- */
+        .retro-list {
+            padding: 15px 15px 15px 30px; /* Dá espaço para os quadrados aparecerem */
+            list-style-type: square; /* Marcadores quadrados */
+            color: #ff007f; /* Cor do quadrado (rosa) */
+            font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+            font-size: 16px;
             margin: 0;
         }
 
-        .activities-list li {
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        /* Transformando os links em botões "gordinhos" (estilo Frutiger Aero/Glossy) */
-        .activities-list a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            background-color: #ffb3d9;
-            color: #66cc33; /* Texto verde */
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 8px; /* Bordas arredondadas */
-            /* Efeito de brilho/vidro (glass effect) muito comum nos anos 2000 */
-            border: 2px solid #ff99cc;
-            box-shadow: inset 0 5px 10px rgba(255,255,255,0.8), 2px 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .activities-list a:hover {
-            background-color: #ff99cc;
-        }
-
-        /* Estilo para a lista de posts na área principal (como você pediu) */
-        .post-list {
-            padding: 20px;
-            list-style-type: none;
-        }
-
-        .post-list li {
+        .retro-list li {
             margin-bottom: 10px;
-            border-bottom: 1px dotted #ff66b2;
-            padding-bottom: 5px;
         }
 
-        .post-list a {
-            color: #ff1493;
+        /* Estilo dos links (Roxo brilhante) */
+        .retro-list a {
+            color: #cc00cc; 
             text-decoration: none;
             font-weight: bold;
         }
-        
-        .post-list a:hover {
+
+        .retro-list a:hover {
             text-decoration: underline;
+            color: #ff1493; /* Muda para rosa ao passar o mouse */
+        }
+
+        /* Estilo do texto das datas (Rosa) */
+        .retro-list span {
+            color: #ff007f;
+            font-weight: normal;
         }
 
     </style>
@@ -165,21 +141,22 @@
         <div class="main-content">
             <div class="title-bar">Posts</div>
             
-            <ul class="post-list">
-                <li><a href="#">1. Computação Visual?</a> (12/08/2026)</li>
-                <li><a href="#">2. Computação Gráfica, Compugrafia ou Compugráfica?</a> (18/08/2026)</li>
-                <li><a href="#">3. Nova Postagem</a> (Em breve)</li>
+            <!-- Usando a classe retro-list -->
+            <ul class="retro-list">
+                <li><a href="#">1. Computação Visual?</a> <span>(12/08/2026)</span></li>
+                <li><a href="#">2. Computação Gráfica, Compugrafia ou Compugráfica?</a> <span>(Em breve)</span></li>
             </ul>
         </div>
 
         <!-- Coluna Direita: Atividades -->
         <div class="sidebar-right">
             <div class="title-bar">Atividades</div>
-            <ul class="activities-list">
-                <!-- Se você quiser os links na forma daqueles botões com números, use isso -->
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
+            
+            <!-- Usando a MESMA classe retro-list para manter o padrão -->
+            <ul class="retro-list">
+                <li><a href="#">Atividade 1</a></li>
+                <li><a href="#">Atividade 2</a></li>
+                <li><a href="#">Atividade 3</a></li>
             </ul>
         </div>
 
