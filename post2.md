@@ -40,3 +40,5 @@ E as Barbies precisavam trocar de looks rapidamente!
 As fórmulas matemáticas (vetores) ocupam pouquíssimo espaço de armazenamento, permitindo que jogos complexos carregassem super rápido nos navegadores!
 
 Hoje em dia, mesmo na época chata do minimalismo, e com uma internet raípidíssima ainda utilizamos imagens vetoriais para fazer logos e ícones, que podem ser redimensionados sem perder a qualidade.
+
+![Club penguin](images/club_penguin.avif)
