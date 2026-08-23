@@ -58,6 +58,24 @@
             flex-grow: 1;
             background-color: #ffccdd; 
             min-height: 500px; 
+            min-width: 0;
+        }
+        .post-text {
+            padding: 20px 25px; /* Espaço para o texto não grudar nas bordas */
+            line-height: 1.6;
+            font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+            color: #4a0033; /* Roxinho escuro para facilitar a leitura */
+            font-size: 15px;
+            /* Garante que palavras gigantes ou links não quebrem a tela: */
+            word-break: break-word; 
+        }
+
+        /* Estilo automático para os Títulos (###) dentro do seu texto */
+        .post-text h1, .post-text h2, .post-text h3 {
+            color: #ff007f;
+            border-bottom: 2px dotted #ff66b2;
+            padding-bottom: 5px;
+            margin-top: 0;
         }
 
         /* Coluna da Direita (Atividades) */
@@ -153,8 +171,8 @@
         <!-- Coluna Central: Anotações -->
         <div class="main-content">
             <div class="title-bar">*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚Anotações*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</div>
-            <!-- Div duplicada removida! -->
-            <div style="padding: 15px; line-height: 1.6;">
+            
+            <div class="post-text">
                 {{ content }}
             </div>
         </div>
