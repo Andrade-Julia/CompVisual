@@ -13,7 +13,7 @@ Entender o que é pixel talvez? Não fui muito além, nem pensei muito.
 Então: 010101, calculos, formulas, algoritmos + imagens, visual, visualização = formação das imagens/ coisas que vemos no ambiente virtual?, computação visual?
 
 E para a: 
-** O que você entendeu que estudaremos?
+**O que você entendeu que estudaremos?** 
 
 Após as primeiras aulas e ao ler o plano de ensino... eu meio que acertei? 
 
