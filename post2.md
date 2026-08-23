@@ -24,6 +24,7 @@ As imagens vetoriais são mais leves por serem mais simples e por armazenarem ap
 Como por exemplo ao desenhar um círculo essa é a fórmula que está por trás dele: (x - h)^2 + (y - k)^2 = r^2 onde se o tamanho da imagem mudar, os valores das variáveis mudam e o valor final, o tamanho do círculo, se ajusta.
 
 ![Imagem vetorial vs imagem matricial](images/vector_vs_bitmap.jpg)
+
 De: https://www.presentationteam.com/bitmap-and-vector-graphics-in-presentations/
 
 Mas mesmo com a arte sendo vetorial, o seu monitor responsável por apresentá-la a você, trabalha com píxels, portanto, é necessária uma tradução, chamada de rasterização, feita através dos softwares em conjunto com o hardware da máquina(CPU ou GPU). E na época, a maioria dessas imagens eram feitas no Macromedia Flash, trabalhando em conjunto com o software flash player para tradução.
@@ -38,4 +39,4 @@ Bom, tudo isso era na época da internet discada, ou na época do finado 3g, ond
 E as Barbies precisavam trocar de looks rapidamente!
 As fórmulas matemáticas (vetores) ocupam pouquíssimo espaço de armazenamento, permitindo que jogos complexos carregassem super rápido nos navegadores!
 
-Hoje em dia, memso na época chada do minimalismo, e com uma internet raídíssima ainda utilizamos imagens vetoriais para fazer logos e ícones, que podem ser redimensionados sem perder a qualidade.
+Hoje em dia, mesmo na época chata do minimalismo, e com uma internet raípidíssima ainda utilizamos imagens vetoriais para fazer logos e ícones, que podem ser redimensionados sem perder a qualidade.
