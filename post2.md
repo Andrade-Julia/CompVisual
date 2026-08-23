@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-### 🌸 Atividade 2: ???
+### 🌸 Atividade 2: Como a Arte Vetorial Dominou os Anos 2000
 
 Oii meninas! Como já devem ter notado, este blog é altamente inspirado na internet dos anos 1990-2010 para as meninas, os blogs de maquiagem, foruns e espaços virtuais, confesso que não tive muito contato, mas sempre vi as garotas legais e mais velhas navegando nessas páginas.
 
