@@ -9,6 +9,7 @@ Sabe quando tiramos aquela foto tumblr, mas ficou escura demais ou com o flash e
 Pois é, os sliders que arrastamos são pura matemática!
 
 ![Kylie Gui estourada](images/Kylie%20Gui.jpg)
+
 Diva tumblr no instagram: @KylieGui
 
 Na aula de hoje (03/09) aprendemos que esses ajustes ocorrem no "domínio espacial". Isso é um nome chique para dizer que o computador pega a nossa foto e altera os valores de intensidade diretamente pixel por pixel!
@@ -29,6 +30,7 @@ Todas as transformações que fazemos nas imagens são na verdade um monte de co
 O O Alargamento de contraste por exemplo:
 
 ![Kylie Gui](images/kyliegui1.jpg)
+
 Diva tumblr no instagram: @KylieGui
 
  Expande as intensidades da imagem para que ela ocupe todo o intervalo disponível do seu celular, deixando a foto super vibrante e com vida! E mais contraste querendo ou naum!
