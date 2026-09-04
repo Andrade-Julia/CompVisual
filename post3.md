@@ -13,14 +13,14 @@ Diva tumblr no instagram: @KylieGui
 
 Na aula de hoje (03/09) aprendemos que esses ajustes ocorrem no "domínio espacial". Isso é um nome chique para dizer que o computador pega a nossa foto e altera os valores de intensidade diretamente pixel por pixel!
 
-Sabe quando você precisa clarear as sombras da foto? Por trás disso existe a Transformação de Potência (Gama). Quando o programa usa um valor de $\gamma < 1$, ele magicamente mapeia os tons escuros e os expande, clareando a imagem seletivamente para revelar os detalhes. É a salvação das nossas fotos no cinema querendo ou naun! 
+Sabe quando você precisa clarear as sombras da foto? Por trás disso existe a Transformação de Potência (Gama). Quando o programa usa um valor de  γ < 1$, ele magicamente mapeia os tons escuros e os expande, clareando a imagem seletivamente para revelar os detalhes. É a salvação das nossas fotos no cinema querendo ou naun! 
 
 E pra escurecer uma foto estourada
 
 ![Oi Italia! - meme Anitta](images/oiitalia1.jpg)
 https://www.tiktok.com/@x.memes13/video/7236838379088792838?is_from_webapp=1&sender_device=pc
 
-A mesma transformação é aplicada, mas com o $\gamma > 1$, que faz exatamente o inverso: realça os detalhes nas partes mais claras e devolve a cor da nossa foto! 
+A mesma transformação é aplicada, mas com o  γ > 1$, que faz exatamente o inverso: realça os detalhes nas partes mais claras e devolve a cor da nossa foto! 
 
 Os nossos dispositivos fazem a mesma coisa, só que automáticamente e em um tempo diferente, toda vez que utilizamos nossas câmeras! E em casos como no meme  "Oi Itália" da Anitta, o pipeline de processamento do samsung dela teve que perceber o clarão e fazer esses cálculos matemáticos ao vivo e em tempo real em cada frame do vídeo... por isso ele "travou" e demorou aquele segundinho para dar oi pra Itália!
 
