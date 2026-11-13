@@ -29,6 +29,7 @@ O surgimento de IAs generativas me deixavam intrigada, mas nunca tinha pensado e
 
 Mas de longe, minha matéria favorita foram as sobre 3D, tenho uma história longa com isso! aprendi na pandemia e me esforcei para conseguir ter um computador para renderizar e coninuar aprendendo. Via um futuro profissional... e BUM!
 ![Bum](/images/image2.png)
+
 A IA veio tirando todas as minhas esperanças, pois a arte que eu fazia em horas, ela conseguia fazer em minutos. Por isso, não me aprofundei muito em nomes, funções, continuei no hobbie, fazendo só o que parecia dar certo. Assim como na edição de imagens, eu só sabia que UV mapping era um negocio chato de fazer a forma caber em um quadrado plano, poligonos pesam e sempre usava os sliders pois não entendia por que tudo tinha números. As aulas me ensinaram tudo o que eu não tive coragem de buscar, pra que serve cada uma dessas abas, até a de rendering que eu estava tão familiarizada. Estou genuinamente motivada a desbravar as abas que eu tinha medo como a de mapping e texturas no blender!
 
 E por último, ãmooooo Minecraft e descobrir o que é um shaders e que *EU posso programar* ele foi incrível! Irei tentar e assim que conseguir e falo pra vocês manas!
@@ -42,5 +43,7 @@ Logo nos primeiros posts pude entender de fato para que tudo aquilo de matriz, i
 Me arrependo muito de não ter me dedicado nesse bimestre com o blog, perdão meninas! 
 Pequei em não fazer uns posts... Adoraria ter relacionado tudo o que aprendi sobre o mundo e a representação 3d com minha arte e os jogos que eu jogo... Talvez eu faça isso mesmo! 
 Já me segue para ver os próximos posts!!!
+
+![BJ da Anitta](/images/brasil-meme.gif)
 
 Beijinhos e até a próxima! *ੈ✩‧₊˚
